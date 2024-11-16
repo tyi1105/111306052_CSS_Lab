@@ -1,0 +1,100 @@
+/* General body styling */
+body {
+    color: #5c3d2e; /* 深棕色字體 */
+    background-color: #f7f3e9; /* 淺茶色背景 */
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #d8c3a5; /* 茶色背景 */
+    color: #3d2b1f; /* 深棕色文字 */
+}
+
+/* Navbar styling */
+.navbar {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #c1a98d; /* 深茶色背景 */
+    border-radius: 5px;
+}
+
+.nav-item {
+    margin: 0 15px;
+    color: #3d2b1f; /* 深棕色文字 */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styling for the 'Service' dropdown */
+.service {
+    display: flex;
+    align-items: center;
+}
+
+.service-label {
+    cursor: pointer;
+    color: #3d2b1f; /* 深棕色文字 */
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.service-select {
+    display: none;
+    margin-left: 10px;
+    background-color: #ede6d5; /* 淺茶色 */
+    border: 1px solid #c1a98d; /* 深茶色邊框 */
+    color: #3d2b1f; /* 深棕色文字 */
+    border-radius: 5px;
+}
+
+/* Show the select dropdown when checkbox is checked */
+.toggle-checkbox:checked + .service-select {
+    display: block;
+}
+
+/* Hide the label when dropdown is shown */
+.toggle-checkbox:checked + .service-select + .service-label {
+    display: none;
+}
+
+/* Content box styling */
+.content-box {
+    flex: 1;
+    padding: 15px;
+    background-color: #ede6d5; /* 淺茶色背景 */
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #c1a98d; /* 深茶色邊框 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 柔和陰影 */
+    color: #5c3d2e; /* 深棕色文字 */
+}
+
+/* Image styling */
+img {
+    background-color: #d8c3a5; /* 茶色背景 */
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #c1a98d; /* 深茶色邊框 */
+}
+
+/* Media queries */
+@media all {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media print {
+    body {
+        font-size: 0.8em;
+    }
+}
